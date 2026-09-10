@@ -24,11 +24,13 @@ mimisbrunnr-of-code/
 │   └── dynamic_array.md       # 用 ctypes 从零实现动态数组
 ├── os/                        # 操作系统笔记
 │   └── deadlock.md            # 死锁与银行家算法（C 实现）
+├── linux/                     # Linux 操作与排查笔记
+│   └── linux_compass.md      # 核心命令、负载分析与 TCP 调优
 ├── README.md                  # 本项目说明（英文版）
 └── README-CN.md               # 中文版说明
 ```
 
-新增语言会以顶层目录的形式添加（例如 `python/`、`go/`、`rust/`、`java/`）。不绑定单一语言的主题笔记（例如操作系统）放在各自的顶层目录中。
+新增语言会以顶层目录的形式添加（例如 `python/`、`go/`、`rust/`、`java/`）。不绑定单一语言的主题笔记（例如操作系统、Linux）放在各自的顶层目录中。
 
 ## ✅ 已有内容
 
@@ -53,6 +55,11 @@ mimisbrunnr-of-code/
 - **死锁** —— `os/deadlock.md`
   - 死锁、饥饿与死循环的辨析，四大必要条件，以及银行家算法（死锁避免）的完整 C 实现。
 
+### Linux
+
+- **Linux 核心操作与系统排查** —— `linux/linux_compass.md`
+  - 文件系统与 Inode、权限、管道与 grep/sed/awk 三剑客、Load Average 与 CPU/I/O 瓶颈判定、TCP `TIME_WAIT` 调优，以及巡检脚本示例与面试要点。
+
 更多内容持续更新中。
 
 ## 🎯 后续计划
@@ -63,6 +70,7 @@ mimisbrunnr-of-code/
 - [x] C —— 栈
 - [x] Python —— 动态数组
 - [x] OS —— 死锁与银行家算法
+- [x] Linux —— 核心操作与系统排查
 - [ ] 更多 C 数据结构
 - [ ] 更多 Python / Go / Rust / Java 实现
 - [ ] 常见算法分类（排序、查找、动态规划等）

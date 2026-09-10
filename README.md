@@ -24,11 +24,13 @@ mimisbrunnr-of-code/
 │   └── dynamic_array.md       # Dynamic array from scratch with ctypes
 ├── os/                        # Operating-system notes
 │   └── deadlock.md            # Deadlock & Banker's Algorithm (C)
+├── linux/                     # Linux operations & troubleshooting notes
+│   └── linux_compass.md      # Core commands, load analysis, TCP tuning
 ├── README.md                  # This file (English)
 └── README-CN.md               # Chinese version
 ```
 
-New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`, `java/`). Topic notes that are not tied to a single language (for example operating systems) live in their own top-level folders.
+New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`, `java/`). Topic notes that are not tied to a single language (for example operating systems or Linux) live in their own top-level folders.
 
 ## ✅ Current Content
 
@@ -53,6 +55,11 @@ New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`
 - **Deadlock** — `os/deadlock.md`
   - Deadlock vs starvation vs infinite loop, the four necessary conditions, and a complete C implementation of the Banker's Algorithm (deadlock avoidance).
 
+### Linux
+
+- **Linux Compass** — `linux/linux_compass.md`
+  - Filesystem and inode layout, permissions, pipes and the grep/sed/awk trio, load average vs CPU/I/O bottlenecks, TCP `TIME_WAIT` tuning, plus a sample health-check script and interview notes.
+
 More items are on the way.
 
 ## 🎯 Roadmap
@@ -63,6 +70,7 @@ More items are on the way.
 - [x] C — Stack
 - [x] Python — Dynamic Array
 - [x] OS — Deadlock & Banker's Algorithm
+- [x] Linux — Core operations & system troubleshooting
 - [ ] More C data structures
 - [ ] More Python / Go / Rust / Java implementations
 - [ ] Common algorithm categories (sorting, searching, dynamic programming, etc.)
