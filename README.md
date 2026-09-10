@@ -15,13 +15,20 @@ This is a community-driven repository: contributions of any language, algorithm,
 
 ```
 mimisbrunnr-of-code/
-├── c/                 # C language implementations & notes
-│   └── linked_list.md # Singly linked list — basic operations in C
-├── README.md          # This file (English)
-└── README-CN.md       # Chinese version
+├── c/                         # C language implementations & notes
+│   ├── linked_list.md         # Singly linked list — basic operations in C
+│   ├── static_linked_list.md  # Static linked list (array-simulated)
+│   ├── dynamic_array.md      # Array & dynamic array (vector)
+│   └── stack.md               # Stack — sequential stack with dynamic growth
+├── python/                    # Python implementations & notes
+│   └── dynamic_array.md       # Dynamic array from scratch with ctypes
+├── os/                        # Operating-system notes
+│   └── deadlock.md            # Deadlock & Banker's Algorithm (C)
+├── README.md                  # This file (English)
+└── README-CN.md               # Chinese version
 ```
 
-New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`, `java/`).
+New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`, `java/`). Topic notes that are not tied to a single language (for example operating systems) live in their own top-level folders.
 
 ## ✅ Current Content
 
@@ -29,14 +36,35 @@ New languages are added as top-level directories (e.g. `python/`, `go/`, `rust/`
 
 - **Singly Linked List** — `c/linked_list.md`
   - Basic operations: define node, create, traverse, insert at head, insert at tail, delete, free the list, plus a complete runnable example and common interview questions.
+- **Static Linked List** — `c/static_linked_list.md`
+  - Array-simulated singly linked list: `val` / `ne` parallel arrays, `head` and `idx` as a simple allocator, typical contest-style operations.
+- **Array & Dynamic Array** — `c/dynamic_array.md`
+  - Static vs dynamic arrays; `data` / `size` / `capacity`; growth, random access, and a complete C implementation.
+- **Stack** — `c/stack.md`
+  - LIFO sequential stack with dynamic growth: `data` / `top` / `capacity`, push, pop, and related operations.
+
+### Python
+
+- **Dynamic Array** — `python/dynamic_array.md`
+  - A from-scratch dynamic array using `ctypes` contiguous buffers (not wrapping built-in `list`), covering size, capacity, and growth.
+
+### Operating Systems
+
+- **Deadlock** — `os/deadlock.md`
+  - Deadlock vs starvation vs infinite loop, the four necessary conditions, and a complete C implementation of the Banker's Algorithm (deadlock avoidance).
 
 More items are on the way.
 
 ## 🎯 Roadmap
 
 - [x] C — Singly Linked List
+- [x] C — Static Linked List
+- [x] C — Dynamic Array
+- [x] C — Stack
+- [x] Python — Dynamic Array
+- [x] OS — Deadlock & Banker's Algorithm
 - [ ] More C data structures
-- [ ] Python / Go / Rust / Java implementations
+- [ ] More Python / Go / Rust / Java implementations
 - [ ] Common algorithm categories (sorting, searching, dynamic programming, etc.)
 - [ ] Tests and build instructions per language
 

@@ -15,13 +15,20 @@
 
 ```
 mimisbrunnr-of-code/
-├── c/                 # C 语言实现与笔记
-│   └── linked_list.md # C 语言单向链表 —— 基础操作
-├── README.md          # 本项目说明（英文版）
-└── README-CN.md       # 中文版说明
+├── c/                         # C 语言实现与笔记
+│   ├── linked_list.md         # C 语言单向链表 —— 基础操作
+│   ├── static_linked_list.md  # 静态链表（数组模拟单链表）
+│   ├── dynamic_array.md      # 数组与动态数组
+│   └── stack.md               # 栈 —— 可动态扩容的顺序栈
+├── python/                    # Python 实现与笔记
+│   └── dynamic_array.md       # 用 ctypes 从零实现动态数组
+├── os/                        # 操作系统笔记
+│   └── deadlock.md            # 死锁与银行家算法（C 实现）
+├── README.md                  # 本项目说明（英文版）
+└── README-CN.md               # 中文版说明
 ```
 
-新增语言会以顶层目录的形式添加（例如 `python/`、`go/`、`rust/`、`java/`）。
+新增语言会以顶层目录的形式添加（例如 `python/`、`go/`、`rust/`、`java/`）。不绑定单一语言的主题笔记（例如操作系统）放在各自的顶层目录中。
 
 ## ✅ 已有内容
 
@@ -29,14 +36,35 @@ mimisbrunnr-of-code/
 
 - **单向链表** —— `c/linked_list.md`
   - 基础操作：定义节点、创建、遍历、头插、尾插、删除、释放链表，附完整可运行示例与常见面试题。
+- **静态链表** —— `c/static_linked_list.md`
+  - 用数组下标模拟指针：`val` / `ne` 平行数组、`head` 与简易分配器 `idx`，以及竞赛风格的基本操作。
+- **数组与动态数组** —— `c/dynamic_array.md`
+  - 静态数组与动态数组的区别；`data` / `size` / `capacity`；扩容、随机访问，以及完整的 C 实现。
+- **栈** —— `c/stack.md`
+  - 后进先出（LIFO）的动态顺序栈：`data` / `top` / `capacity`，入栈、出栈及相关操作。
+
+### Python
+
+- **动态数组** —— `python/dynamic_array.md`
+  - 不封装内置 `list`，用 `ctypes` 申请物理连续内存，从零复刻动态数组（元素个数、容量与扩容）。
+
+### 操作系统
+
+- **死锁** —— `os/deadlock.md`
+  - 死锁、饥饿与死循环的辨析，四大必要条件，以及银行家算法（死锁避免）的完整 C 实现。
 
 更多内容持续更新中。
 
 ## 🎯 后续计划
 
 - [x] C —— 单向链表
+- [x] C —— 静态链表
+- [x] C —— 动态数组
+- [x] C —— 栈
+- [x] Python —— 动态数组
+- [x] OS —— 死锁与银行家算法
 - [ ] 更多 C 数据结构
-- [ ] Python / Go / Rust / Java 实现
+- [ ] 更多 Python / Go / Rust / Java 实现
 - [ ] 常见算法分类（排序、查找、动态规划等）
 - [ ] 各语言的测试与编译说明
 
